@@ -14,15 +14,15 @@ public class Security {
 
         boolean isAccess = false;
         if (user == null) {
-            return isAccess;
+            isAccess = false;
         }
 
         if (permission == null) {
-            return isAccess;
+            isAccess = false;
         }
 
         if (permissions.size() == 0) {
-            return isAccess;
+            isAccess = false;
         }
 
         if (securityChecker.isAdmin()) {
